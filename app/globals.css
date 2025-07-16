@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #191919;
+  color: white;
+}
+
+@media (max-width: 1279px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+}
+
+@media (max-height: 720px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+.floating-icon {
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.06);
+  z-index: 0;
+  pointer-events: none;
+}
